@@ -1,0 +1,96 @@
+body {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #0E0E0E;
+}
+
+.container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+}
+
+.banner {
+    position: relative;
+    width: 1500px;
+    height: 500px;
+    overflow: hidden;
+}
+
+.banner img {
+    width: 100%;
+    height: auto;
+    transform: scale(1.2) rotate(-15deg) translate(120px, -90px);
+}
+
+.banner::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.text-overlay {
+    position: absolute;
+    top: 20px;
+    left: 50px;
+    color: white;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 100px;
+    z-index: 2;
+}
+
+.icons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    z-index: 2;
+}
+
+.icon {
+    margin: 10px;
+}
+
+.icon.js {
+    position: absolute;
+    top: 10%;
+    right: 25%;
+    color: #F6DE45;
+}
+
+.icon.bootstrap {
+    position: absolute;
+    top: 10%;
+    right: 5%;
+    color: #6F31EF;
+}
+
+.icon.react {
+    position: absolute;
+    bottom: 10%;
+    right: 25%;
+    color: #62DBF5;
+}
+
+.icon.php {
+    position: absolute;
+    bottom: 10%;
+    right: 5%;
+    color: #787DB0;
+}
